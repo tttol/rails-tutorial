@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   
   root "greetings#index"
+
+  resources :notes, only: :index
 end
